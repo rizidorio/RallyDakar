@@ -60,5 +60,10 @@ namespace RallyDakar.Dominio.Repositorios
         {
             return _rallyDbContexto.Telemetria.ToList();
         }
+
+        public IEnumerable<Telemetria> ObterTodosPorEquipe(int equipeId)
+        {
+            return _rallyDbContexto.Telemetria.Where(t => t.EquipeId == equipeId).ToList();
+        }
     }
 }

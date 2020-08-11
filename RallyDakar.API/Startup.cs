@@ -35,6 +35,7 @@ namespace RallyDakar.API
 
             services.AddScoped<IPilotoRepositorio, PilotoRepositorio>();
             services.AddScoped<ITelemetriaRepositorio, TelemetriaRepositorio>();
+            services.AddScoped<IEquipeRepositorio, EquipeRepositorio>();
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
         }
